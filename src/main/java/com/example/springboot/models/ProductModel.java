@@ -19,6 +19,8 @@ public class ProductModel implements Serializable { // Classe de modelo para pro
     private String name; // Campo que representa o nome do produto
     private BigDecimal value; // Campo que representa o valor do produto
 
+    public ProductModel() {}
+
     public UUID getIdProduct() { // Método getter para obter o ID do produto
         return idProduct;
     }
