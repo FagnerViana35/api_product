@@ -2,6 +2,7 @@ package com.example.springboot.models;
 
 import jakarta.persistence.*; // Importações relacionadas à JPA (Java Persistence API)
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.UUID;
@@ -9,6 +10,7 @@ import java.util.UUID;
 @Entity // Anotação que indica que essa classe é uma entidade JPA
 @Table(name = "TB_PRODUCTS") // Nome da tabela no banco de dados associada a esta entidade
 public class ProductModel implements Serializable { // Classe de modelo para produtos, implementando Serializable para serialização
+    @Serial
     private static final long serialVersionUID = 1L; // Número de série para serialização
 
     @Id // Indica que o campo a seguir é a chave primária da entidade
